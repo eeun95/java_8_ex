@@ -25,6 +25,7 @@ public class StudentView {
 				System.out.println("영어점수 : " + s[i].eng);
 				System.out.println("총점 : " + s[i].total);
 				System.out.println("평균 : " + s[i].avg);
+				System.out.println("===========================");
 				check = !check;
 			}
 		}

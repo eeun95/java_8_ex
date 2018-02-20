@@ -13,8 +13,6 @@ public class SchoolController {
 
 		StudentService ss = new StudentService();
 		StudentView sv = new StudentView();
-		Student s = new Student();
-		SchoolController scon = new SchoolController();
 
 		while (true) {
 			System.out.println("1.학생등록 2.성적입력 3.성적조회 4.전체조회 5.종료");
