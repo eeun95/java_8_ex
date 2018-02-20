@@ -45,4 +45,10 @@ public class StudentService {
 
 		return ss;
 	}
+	public void search(Student [] s) {
+		StudentView sv = new StudentView();
+		System.out.println("조회할 학생의 번호를 입력하세요.");
+		int nv = sc.nextInt();
+		sv.numView(s,nv);
+	}
 }
