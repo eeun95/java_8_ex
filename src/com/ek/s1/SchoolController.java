@@ -25,7 +25,7 @@ public class SchoolController {
 				ar = ss.addStudent();
 			} else if (num == 2) {
 				System.out.println("성적을 입력하세요.");
-				ar = ss.addPoint(ar);
+				ss.addPoint(ar);
 			} else if (num == 3) {
 				System.out.println("조회할 학생의 번호를 입력하세요.");
 			} else if (num == 4) {

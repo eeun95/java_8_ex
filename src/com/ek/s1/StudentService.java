@@ -26,14 +26,18 @@ public class StudentService {
 
 	public Student[] addPoint(Student[] ss) {
 		for (int i = 0; i < ss.length; i++) {
-			Student s = new Student();
 			System.out.println(ss[i].name + "의 국어 점수를 입력하세요");
-			s.kor = sc.nextInt();
+			ss[i].kor = sc.nextInt();
 			System.out.println(ss[i].name + "의 영어 점수를 입력하세요");
-			s.eng = sc.nextInt();
+			ss[i].eng = sc.nextInt();
 			System.out.println(ss[i].name + "의 수학 점수를 입력하세요");
-			s.math = sc.nextInt();
-			ss[i] = s;
+			ss[i].math = sc.nextInt();
+			
+			ss[i].total = ss[i].kor + ss[i].eng + ss[i].math;
+			ss[i].avg = ss[i].total/3.0;
+			
+			System.out.println(ss[i].name+"의 총점 : "+ss[i].total);
+			System.out.println(ss[i].name+"의 평균 : "+ss[i].avg);
 		}
 
 		return ss;
