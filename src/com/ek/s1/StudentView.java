@@ -5,8 +5,13 @@ public class StudentView {
 		for (int i = 0; i < s.length; i++) {
 			System.out.println("이름 : "+s[i].name);
 			System.out.println("번호 : "+s[i].num);
+			System.out.println("국어점수 : "+s[i].kor);
+			System.out.println("수학점수 : "+s[i].math);
+			System.out.println("영어점수 : "+s[i].eng);
+			System.out.println("총점 : "+s[i].total);
+			System.out.println("평균 : "+s[i].avg);
+
 		}
-		System.out.println("안녕");
 	}
 
 }
