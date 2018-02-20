@@ -28,11 +28,14 @@ public class SchoolController {
 				ss.addPoint(ar);
 			} else if (num == 3) {
 				System.out.println("조회할 학생의 번호를 입력하세요.");
+				int nv = scanner.nextInt();
+				sv.numView(ar,nv);
 			} else if (num == 4) {
 				System.out.println("전체 조회 결과");
 				sv.view(ar);
 			} else if (num == 5) {
 				System.out.println("종료되었습니다.");
+				break;
 			} else {
 				System.out.println("잘못된 입력입니다.");
 			}
